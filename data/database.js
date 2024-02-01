@@ -3,7 +3,7 @@ const MongoClient=mongodb.MongoClient;
 let database;
 async function initDb(){
     const client=await MongoClient.connect('mongodb+srv://venkyeswar:7112001746@cluster0.qpo13la.mongodb.net/?retryWrites=true&w=majority');
-    database=client.db('first-app');
+    database=client.db('blog');
 }
 
 function getDb(){
